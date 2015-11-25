@@ -8,14 +8,14 @@ function Stack() {
 		} else {
 			return top.data;
 		}
-	}
+	};
 	
 	this.push = function(data) {
 		var newTop = new Node(data);
 		newTop.next = top;
 		top = newTop;
 		length++;
-	}
+	};
 	
 	this.pop = function() {
 		if (length === 0) {
@@ -26,11 +26,11 @@ function Stack() {
 		top = newTop;
 		length--;
 		return data;
-	}
+	};
 	
 	this.length = function() {
 		return length;
-	}
+	};
 }
 
 function Node(data) {

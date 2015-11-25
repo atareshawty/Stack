@@ -55,10 +55,10 @@ test('pop', function() {
 			stack.push(i);
 		}
 		
-		for (var i = 1000; i > 2; i--) {
-			assert(stack.pop() === i - 1);
-			assert(stack.top() === i - 2);
-			assert(stack.length() === i - 1);		
+		for (var k = 1000; i > 2; k--) {
+			assert(stack.pop() === k - 1);
+			assert(stack.top() === k - 2);
+			assert(stack.length() === k - 1);		
 		}
 	});
 });
@@ -80,6 +80,6 @@ test('length', function() {
 		for (var i = 0; i < 1000; i++) {
 			stack.push(i);
 			assert(stack.length() === i + 1);
-		};
-	})
-})
+		}
+	});
+});
